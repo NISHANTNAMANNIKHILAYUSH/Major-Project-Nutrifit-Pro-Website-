@@ -1,0 +1,197 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('exercise photo\ wall.jpg'); /* Replace with the correct path to your background image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    color: rgb(243, 0, 0);
+    text-align: center;
+    scroll-behavior: smooth;
+    transition: background-color 0.5s ease;
+}
+
+body:hover {
+    background-color: #2b2b2b; /* Changes background on hover */
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    animation: slideDown 1s ease-in-out;
+}
+
+header h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+header h1:hover {
+    color: #ff0184; /* Header text hover effect */
+}
+
+nav {
+    background-color: #444;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+    border: 3px solid #ff0184; /* Creates a solid border (frame) around the nav */
+    border-radius: 10px; 
+}
+
+nav:hover {
+    background-color: #555; /* Changes nav background on hover */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li {
+    text-align: center;
+    flex-direction: column;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2) rotate(5deg); /* Rotates slightly on hover */
+    color: #ffbf00; /* Text color change on hover */
+}
+
+nav ul li a img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 191, 0, 0.5); /* Adds a glow effect */
+}
+
+nav ul li a span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover span {
+    color: #ffbf00; /* Text color change */
+}
+
+article {
+    background-color: #282828;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    animation: fadeInUp 0.7s ease-in-out;
+    transition: transform 0.3s ease, background-color 0.5s ease;
+    border: 3px solid #ff0184; /* Creates a solid border (frame) around the nav */
+    border-radius: 10px; 
+}
+
+article:hover {
+    transform: scale(1.05);
+    background-color: #623b3b; /* Changes background on hover */
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+article h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #ffbf00;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+article p {
+    color: #bfbfbf;
+    animation: fadeInUp 0.7s ease-in-out 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards; /* Ensures it stays visible */
+}
+
+article:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: white;
+    animation: fadeInUp 0.7s ease-in-out;
+}
+
+footer:hover {
+    background-color: #444; /* Changes background on hover */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
