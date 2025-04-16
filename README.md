@@ -28,4 +28,4 @@ register
 server
 
 style
-after that create folder "form"-> gym_profile_setup.php file , ' n,y,n home ' folder create-> home.html,home.cs,script.js , add ecercise, meal folder
+after that create folder "form"-> gym_profile_setup.php file , ' n,y,n home ' folder create-> home.html,home.cs,script.js , add ecercise,article, meal folder-> in meal file add all meal html, css, js file /in exerscie add all excersise html,css,js files/same way in article
